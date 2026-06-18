@@ -6,7 +6,7 @@
 /*   By: enucci <enucci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 01:14:50 by columbux          #+#    #+#             */
-/*   Updated: 2026/06/11 16:36:55 by enucci           ###   ########.fr       */
+/*   Updated: 2026/06/18 10:16:33 by enucci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,10 @@ unsigned char    reverse_bits(unsigned char octet)
 
     res = 0;
     i = 8;
-    while (i > 0)
+    while (i-- > 0)
     {
         res = (res << 1) | (octet & 1);
         octet = octet >> 1;
-        i--;
     }
     return (res);
 }

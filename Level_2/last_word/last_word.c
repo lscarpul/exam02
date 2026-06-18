@@ -6,7 +6,7 @@
 /*   By: enucci <enucci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 20:24:22 by columbux          #+#    #+#             */
-/*   Updated: 2026/06/08 15:53:19 by enucci           ###   ########.fr       */
+/*   Updated: 2026/06/18 10:05:50 by enucci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,15 +58,15 @@ void	last_word(char *str)
 	while (str[i] != '\0')
 		i++;
 	
-	i--;     //posizionato sull ultimo carattere della sringa
+	i--;  
 
 	while (i >= 0 && (str[i] == ' ' || str[i] == '\t'))
-		i--;     // salta spazi e tab cicalndo da fine a inizio stringa
+		i--;  
 
-	end = i; //salva nella variabile end il carattre in cui si ferma
+	end = i;
 
 	while (i >= 0 && str[i] != ' ' && str[i] != '\t')
-		i--;  //si muove dentro la parola. Si fermerà solo quando incontra di nuovo uno spazio, un tab, o se finisce la stringa
+		i--;
 
 	i++;
 
