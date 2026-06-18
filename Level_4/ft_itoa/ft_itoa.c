@@ -6,7 +6,7 @@
 /*   By: enucci <enucci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 12:29:20 by alex              #+#    #+#             */
-/*   Updated: 2026/06/10 12:28:08 by enucci           ###   ########.fr       */
+/*   Updated: 2026/06/18 13:28:21 by enucci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ static int	get_len(int nbr)
 		len++;
 	while (nbr != 0)
 	{
-		len++;
 		nbr /= 10;
+		len++;
 	}
 	return (len);
 }
@@ -50,7 +50,7 @@ char	*ft_itoa(int nbr)
 	if (n < 0)
 	{
 		str[0] = '-';
-		n = -n;
+		n = n * -1;
 	}
 	
 	while (n > 0)

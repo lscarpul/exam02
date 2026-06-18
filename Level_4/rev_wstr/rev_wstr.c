@@ -11,7 +11,7 @@ int	main(int argc, char **argv)
 	{
 		i = 0;
 		while (str[i])
-			i++;
+			i++;                          
 		
 		end = i - 1;
 		

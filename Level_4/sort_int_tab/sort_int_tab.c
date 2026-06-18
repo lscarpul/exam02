@@ -6,7 +6,7 @@
 /*   By: enucci <enucci@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 08:24:39 by alex              #+#    #+#             */
-/*   Updated: 2026/06/11 17:13:13 by enucci           ###   ########.fr       */
+/*   Updated: 2026/06/18 12:14:06 by enucci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	sort_int_tab(int *tab, unsigned int size)
 
 	i = 0;
 	while (i < size)
-	{
+	{																	 4 6 2 8 9
 		j = i + 1;
 		while (j < size)
 		{
