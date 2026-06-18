@@ -23,13 +23,13 @@ int main(int argc, char **argv)
         if(str[i] == '\0')
         {
             write(1, "\n", 1);
-            return 0;
-        }
+            return 0;                    .   ciao a   tutti  .
+         }
 
         start = i;
         while(!is_space(str[i]))
             i++;
-        end = i;
+        end = i;                                                              ciao buongiorno  a tutti 
 
         
         while(str[i])

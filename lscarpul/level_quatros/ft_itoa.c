@@ -38,18 +38,6 @@ char *itoa(int nbr)
         nbr = nbr / 10;
     }
 
-    
-    // else
-    // {
-    //     while(len > 0)
-    //     {
-    //         len--;
-    //         str[len] = nbr % 10 + '0';
-    //         nbr = nbr / 10;
-            
-    //     }
-    // }
-
     return(str);
 }
 

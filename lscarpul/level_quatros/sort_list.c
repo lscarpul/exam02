@@ -8,7 +8,7 @@ t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
         return(start);
     while (lst->next != 0)
     {
-        if(*cmp(lst->data, lst->next->data) == 0)
+        if(cmp(lst->data, lst->next->data) == 0)
         {
             tmp = lst->data;
             lst->data = lst->next->data;
